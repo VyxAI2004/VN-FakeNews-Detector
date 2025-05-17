@@ -1,0 +1,215 @@
+/* CSS cho Processing Options */
+
+/* Tab navigation styling */
+#processingTabs .nav-link {
+  color: #555;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+#processingTabs .nav-link.active {
+  background-color: white;
+  color: black;
+}
+
+#processingTabs .nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.option-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  font-size: 11px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 0 4px;
+}
+
+/* Option groups styling */
+.option-group {
+  border: 1px solid #dee2e6;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.option-group-header {
+  padding: 12px 15px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.option-group-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.option-group-content {
+  padding: 15px;
+}
+
+/* Option cards styling */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-card {
+  border: 1px solid #dee2e6;
+  border-radius: var(--border-radius);
+  padding: 12px;
+  background-color: #f8f9fa;
+  transition: var(--transition);
+  position: relative;
+  margin: 0;
+}
+
+.option-card:hover {
+  border-color: var(--primary-color);
+  background-color: var(--primary-light);
+  box-shadow: var(--box-shadow);
+  transform: translateY(-2px);
+}
+
+.option-card .form-check-input {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.option-card-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+  padding-right: 30px;
+}
+
+.option-card-desc {
+  font-size: var(--font-size-sm);
+  color: #666;
+}
+
+/* TabActions styling */
+.option-actions {
+  display: flex;
+  align-items: center;
+}
+
+.view-mode-toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* Custom inputs styling */
+.custom-special-chars, .ngrams-options {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  margin-top: 15px;
+}
+
+/* Alert styling enhancements */
+.alert {
+  border-radius: var(--border-radius);
+  margin-top: 15px;
+}
+
+/* Vectorization option specific styling */
+.vectorization-option .form-check-input {
+  margin-top: 0.15rem;
+}
+
+/* Model selection styling */
+.model-selection {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: var(--border-radius);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .option-actions, .view-mode-toggle {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .view-mode-toggle {
+    margin-top: 10px;
+  }
+}
+
+/* Loading spinner */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Add some animations */
+.animated-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.settings-card {
+  margin-bottom: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.settings-card .card-header {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  padding: 12px 15px;
+} 
+
+.input-card {
+  box-shadow: var(--box-shadow);
+  border:floralwhite
+}
+
+.results-card-mb-4 {
+  box-shadow: var(--box-shadow);
+  border:floralwhite
+}
+
+.settings-card {
+  box-shadow: var(--box-shadow);
+  border:floralwhite 
+}
+
+.tab-content {
+  border:floralwhite !important;
+}
