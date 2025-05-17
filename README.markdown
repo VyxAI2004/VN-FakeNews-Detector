@@ -24,8 +24,6 @@ Dự án này là hệ thống phát hiện tin giả dành cho nội dung tiế
 │   ├── src/                # Mã nguồn React
 │   ├── package.json        # Cấu hình và dependencies
 │   └── README.md           # Hướng dẫn dành riêng cho frontend
-│
-└── preprocessed_data.csv   # Dữ liệu đã được tiền xử lý
 ```
 
 ## Công nghệ sử dụng (Technologies Used)
@@ -100,9 +98,9 @@ API được tự động tạo tài liệu bằng Swagger và có sẵn tại e
 Endpoint chính:
 - `POST /api/detect_fake_news`: Phân tích nội dung và phát hiện tin giả
 
-## Liên hệ (Contact)
-
-
----
-
-*Dự án này là một phần của nỗ lực chống lại sự lan truyền của thông tin sai lệch trên internet và cải thiện chất lượng thông tin trong không gian kỹ thuật số tiếng Việt.* 
+## Liên hệ
+- **Tác giả**: Nguyễn Hoàng Vỹ
+- **MSSV**: 22110275
+- **Email**: <vyxv113@gmail.com>
+- **Trường**: Đại học Sư Phạm Kỹ Thuật TP.HCM
+- **Khoa**: Công nghệ thông tin - Trí tuệ nhân tạo
